@@ -5,6 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My GitHub Pages Images</title>
     <style>
+        /* --- NEW CSS FOR TABLE STYLING --- */
+        table {
+            width: 80%; /* Make table take 80% of its container's width */
+            border-collapse: collapse; /* Collapses borders between cells */
+            margin: 2rem auto; /* Center the table and add top/bottom margin */
+            font-family: sans-serif; /* Set a clean font for the table */
+        }
+
+        th, td {
+            border: 1px solid #ddd; /* Light gray border for cells */
+            padding: 0.8rem;      /* Space inside cells */
+            text-align: left;     /* Align text to the left */
+        }
+
+        th {
+            background-color: #f2f2f2; /* Light gray background for headers */
+            color: #333;             /* Darker text for headers */
+            font-weight: bold;       /* Ensure headers are bold */
+            text-align: center;      /* Center header text */
+        }
+
+        tr:nth-child(even) { /* Stripe effect: style every second row */
+            background-color: #f9f9f9;
+        }
+
+        /* Optional: Style the first row specifically if it's not in thead */
+        /* tr:first-child {
+            background-color: #f2f2f2;
+            font-weight: bold;
+            text-align: center;
+        } */
+
+
         /* --- Base Font Size Setup (for REM units) --- */
         /* It's good practice to set a base font-size on the html element. */
         /* 16px is the browser's default. You can change it if you want your
@@ -40,7 +73,7 @@
         h2 {
             font-size: 2rem; /* 2 times the base html font size (e.g., 2 * 16px = 32px) */
             text-align: left;
-            color: #555;
+            color: #333;
         }
         h3 {
             font-size: 1.5rem; /* 1.5 times the base html font size (e.g., 2 * 16px = 32px) */
@@ -78,6 +111,42 @@
 
 
     <h2>Workshop agenda</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Activity</th>
+                <th>Speakers</th>
+                <th>Note</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>9:30am - 9:35am</td>
+                <td>Introduction</td>
+                <td>Completed</td>
+                <td>Alice</td>
+            </tr>
+            <tr>
+                <td>9:35am - 11:30am</td>
+                <td>Talks</td>
+                <td>In Progress</td>
+                <td>Bob</td>
+            </tr>
+            <tr>
+                <td>11:30am - 13:00pm</td>
+                <td>Lunch</td>
+                <td>Pending</td>
+                <td>Charlie</td>
+            </tr>
+            <tr>
+                <td>13:00pm - 16:00pm</td>
+                <td>Poll</td>
+                <td>Pending</td>
+                <td>Alice</td>
+            </tr>
+        </tbody>
+    </table>
     <h3>Workshop registration</h3>
 
 
@@ -98,14 +167,14 @@
     <h3>Mechanical component dataset</h3>
     <p>More resources coming soon!</p>
     <div class="image-container">
-        <img src="MechanicalComponentDataset.png" alt="Fine-tuning for generative CAD">
+        <img src="MechanicalComponentDataset.png" alt="MCB">
 
     </div>
 
     <h3>Manufacturing method dataset</h3>
     <p>More resources coming soon!</p>
     <div class="image-container">
-        <img src="ManufacutringMethodDataset.png" alt="Fine-tuning for generative CAD">
+        <img src="ManufacturingMethodDataset.png" alt="Jason's dataset">
 
     </div>
 
@@ -113,7 +182,7 @@
     <h2>Techniques & products for generative technical deisgn</h2>
     <h3>RAG</h3>
     <div class="image-container">
-        <img src="RAG4MechanicalEngineering.png" alt="Fine-tuning for generative CAD">
+        <img src="RAG4MechanicalEngineering.png" alt="RAG for CAD">
 
     </div>
 
