@@ -19,11 +19,22 @@
             text-align: center;
             margin-top: 50px;
             color: #333;
+            margin: 0 2rem; /* 0 top/bottom, 2rem left/right */
         }
         /* --- Heading Styles (using REM) --- */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif; /* Your chosen heading font */
+            margin-top: 1.5rem;   /* Space above all headings */
+            margin-bottom: 1rem; /* Space below all headings */
+            margin-left: 2rem;  /* Example: 2 times the root font size */
+            margin-right: 2rem; /* Example: 2 times the root font size */
+            /* Headings are block elements, so they naturally take full width. */
+            /* By default, they have some browser-defined margins, which you are now overriding. */
+        }
+
         h1 {
             font-size: 3rem; /* 3 times the base html font size (e.g., 3 * 16px = 48px) */
-            font-family: "Times New Roman", Times, serif; /* Example: A common serif font for headings */
+            /*font-family: "Times New Roman", Times, serif; /* Example: A common serif font for headings */
             color: #333;
         }
         h2 {
@@ -37,11 +48,14 @@
             color: #555;
         }
         p {
-            font-family: Verdana, Geneva, sans-serif; /* Another sans-serif option */
+            /*font-family: Verdana, Geneva, sans-serif; /* Another sans-serif option */
             font-size: 1.1rem; /* 1.1 times the base html font size (e.g., 1.1 * 16px = 17.6px) */
             line-height: 1.6; /* Spacing between lines for readability */
+            text-align: left;
             max-width: 800px; /* Limit paragraph width for readability */
-            margin: 0 auto 15px auto; /* Center paragraph and add bottom space */
+            /*margin: 0 auto 15px auto; /* Center paragraph and add bottom space */
+            margin-left: 2rem;  /* Example: 2 times the root font size */
+            margin-right: 2rem; /* Example: 2 times the root font size */
         }
         .image-container {
             display: flex;
@@ -66,13 +80,13 @@
     <h2>Projet team</h2>
     <p>Jonathan Corney, Digital Design & Manufacture, School of Engineering
 
-        Shuang Li, AI Applications Researcher, School of Engineering
+        <br>Shuang Li, AI Applications Researcher, School of Engineering
         
-        Miguel Paredes Maldonado, Architectural Design, Edinburgh College of Art
+        <br>Miguel Paredes Maldonado, Architectural Design, Edinburgh College of Art
         
-        Amir Vaxman, Geometry Processing Group, School of Informatics
+        <br>Amir Vaxman, Geometry Processing Group, School of Informatics
         
-        Matjaz Vidmar, Innovation & development (eco)systems, Institute for Study of Science, Technology & Innovation 
+        <br>Matjaz Vidmar, Innovation & development (eco)systems, Institute for Study of Science, Technology & Innovation 
     </p>
     <h2>Datasets for technical deisgn</h2>
     <p>More resources coming soon!</p>
